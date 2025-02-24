@@ -1,53 +1,43 @@
 <template>
-  <div>
-    <h1>Personal Profile Web Page</h1>
-    
-    <section>
-      <h2>About Me</h2>
-      <img :src="profileImage" alt="Profile Picture" width="150">
-      <p><strong>Name:</strong> {{ name }}</p>
-      <p>{{ bio }}</p>
-      <p><strong>Interests:</strong> {{ interests.join(', ') }}</p>
-    </section>
+  <div class="container">
+    <header><h1>Personal Profile Web Page</h1></header>
 
-    <section>
-      <h2>Education & Achievements</h2>
-      <table border="1">
-        <thead>
-          <tr>
-            <th>Level</th>
-            <th>Program</th>
-            <th>School</th>
-            <th>Year</th>
-            <th>Awards</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-for="edu in education" :key="edu.level">
-            <td>{{ edu.level }}</td>
-            <td>{{ edu.program }}</td>
-            <td>{{ edu.school }}</td>
-            <td>{{ edu.year }}</td>
-            <td>{{ edu.award }}</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+    <main>
+      <section class="main-content">
+        <div>About Me</div>
+        <p><strong>Name:</strong> {{ name }}</p>
+        <p>{{ bio }}</p>
 
-    <section>
-      <h2>IT Experience</h2>
-      <ul>
-        <li v-for="exp in itExperience" :key="exp">{{ exp }}</li>
-      </ul>
-    </section>
+        <div>Education / Achievements</div>
+        <ul>
+          <li v-for="edu in education" :key="edu.level">
+            {{ edu.level }} - {{ edu.program }} at {{ edu.school }} ({{ edu.year }}) - {{ edu.award }}
+          </li>
+        </ul>
 
-    <section>
-      <h2>Memorable Photos</h2>
-      <div>
-        <img v-for="photo in memorablePhotos" :key="photo" :src="photo" alt="Memorable Photo" width="100">
-      </div>
-    </section>
-    
+        <div>Course</div>
+        <p>{{ course }}</p>
+
+        <div>IT Experience</div>
+        <ul>
+          <li v-for="exp in itExperience" :key="exp">{{ exp }}</li>
+        </ul>
+
+        <div>Hobbies & Interests</div>
+        <p>{{ interests.join(', ') }}</p>
+
+        <div>Goals In Life / Dreams</div>
+        <p>{{ goals }}</p>
+
+        <div>Picture Gallery</div>
+        <div>
+          <img v-for="photo in memorablePhotos" :key="photo" :src="photo" alt="Memorable Photo" width="100">
+        </div>
+      </section>
+
+      <aside class="sidebar"></aside>
+    </main>
+
     <footer>Asia Pacific College</footer>
   </div>
 </template>
@@ -58,9 +48,8 @@ export default {
   data() {
     return {
       name: "Ric Brian P. Boado",
-      profileImage: "https://scontent.fmnl30-2.fna.fbcdn.net/v/t1.6435-9/116731274_118026103338864_7024368847241138582_n.jpg",
-      bio: "Currently studying BSCS - Cybersecurity & Forensics at Asia Pacific College.",
-      interests: ["Video games", "Coding", "Anime", "Animation"],
+      bio: "Currently studying Bachelor of Science in Computer Science with a specialization in Cybersecurity and Forensics at Asia Pacific College (APC), 2nd year.",
+      course: "BSCS - Cybersecurity & Forensics",
       education: [
         { level: "College", program: "BSCS - Cybersecurity & Forensics", school: "Asia Pacific College", year: "2023-2027", award: "Honor Student" },
         { level: "Senior High", program: "TVL-ICT", school: "Pasay City South High School", year: "2017-2021", award: "With High Honors" },
@@ -73,6 +62,8 @@ export default {
         "Tutorials on YouTube/courses about coding",
         "Basic Wireshark packet handling"
       ],
+      interests: ["Video games", "Coding", "Anime", "Animation"],
+      goals: "Pass the Philippine Military Academy and pursue a career in cybersecurity and forensics.",
       memorablePhotos: [
         "https://i.postimg.cc/dZRKCzfc/mphoto1.jpg",
         "https://i.postimg.cc/9rV22Q4m/mphoto2.jpg",
