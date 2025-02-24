@@ -4,7 +4,7 @@
     
     <section>
       <h2>About Me</h2>
-      <img :src="https://i.postimg.cc/BjhDX0kQ/FB-IMG-1733983675126.jpg" alt="Profile Picture" width="150">
+      <img :src="profileImage" alt="Profile Picture" width="150">
       <p><strong>Name:</strong> {{ name }}</p>
       <p>{{ bio }}</p>
       <p><strong>Interests:</strong> {{ interests.join(', ') }}</p>
@@ -58,7 +58,7 @@ export default {
   data() {
     return {
       name: "Ric Brian P. Boado",
-      profileImage: "https://scontent.fmnl30-2.fna.fbcdn.net/v/t1.6435-9/116731274_118026103338864_7024368847241138582_n.jpg",
+      profileImage: "https://i.postimg.cc/BjhDX0kQ/FB-IMG-1733983675126.jpg",
       bio: "Currently studying BSCS - Cybersecurity & Forensics at Asia Pacific College.",
       interests: ["Video games", "Coding", "Anime", "Animation"],
       education: [
