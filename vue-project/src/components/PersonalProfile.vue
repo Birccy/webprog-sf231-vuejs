@@ -4,7 +4,7 @@
     
     <section>
       <h2>About Me</h2>
-      <img :src="profileImage" alt="Profile Picture" width="150">
+      <img :src="https://scontent.fmnl30-2.fna.fbcdn.net/v/t1.6435-9/116731274_118026103338864_7024368847241138582_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeERD8VDOfXzwRtzebwwSQ3KIbh6xsNvwEghuHrGw2_ASHy367h9M05HNeGlgWQj0jpW84IANe86Filr2sXU6kMb&_nc_ohc=KlKCdNMg50kQ7kNvgHGhZCA&_nc_oc=Adh-eljErAvqbgHTxAiBJe2uqs_iHNkNDMOt-zE6O8CNyzsDIco9r2zy5s8VGKT3JlA&_nc_zt=23&_nc_ht=scontent.fmnl30-2.fna&_nc_gid=AYjp8lvb6B1SigjqvdhITC3&oh=00_AYCCRSCLFaFnlVMhdKi9xD_gSprqvgL_WJ8ORXCoSI7T7g&oe=67E37DF7" alt="Profile Picture" width="150">
       <p><strong>Name:</strong> {{ name }}</p>
       <p>{{ bio }}</p>
       <p><strong>Interests:</strong> {{ interests.join(', ') }}</p>
