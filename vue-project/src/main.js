@@ -1,4 +1,8 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+import FoodItem from './components/FoodItem.vue'
+app.component('food-item', FoodItem)
+
+const app = createApp(App)
+app.mount('#app')
