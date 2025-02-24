@@ -5,33 +5,36 @@
     <main>
       <section class="main-content">
         <div>About Me</div>
-        <p><strong>Name:</strong> {{ name }}</p>
-        <p>{{ bio }}</p>
+        <div>Name: Ric Brian P. Boado</div>
+        <div>Currently studying BSCS - Cybersecurity & Forensics at Asia Pacific College, 2nd year.</div>
 
         <div>Education / Achievements</div>
-        <ul>
-          <li v-for="edu in education" :key="edu.level">
-            {{ edu.level }} - {{ edu.program }} at {{ edu.school }} ({{ edu.year }}) - {{ edu.award }}
-          </li>
-        </ul>
+        <div>College: Asia Pacific College (2023-2027) - Honor Student</div>
+        <div>Senior High: Pasay City South High School (2017-2021) - With High Honors</div>
+        <div>Junior High: Pasay City South High School (2021-2023) - With High Honors</div>
+        <div>Elementary: Villamor Air Base Elementary School (2011-2017) - Honor Student</div>
 
         <div>Course</div>
-        <p>{{ course }}</p>
+        <div>BSCS - Cybersecurity & Forensics</div>
 
         <div>IT Experience</div>
-        <ul>
-          <li v-for="exp in itExperience" :key="exp">{{ exp }}</li>
-        </ul>
+        <div>Building my own personal PC</div>
+        <div>Simple coding projects with Python</div>
+        <div>Tutorials on YouTube / coding courses</div>
+        <div>Basic Wireshark packet handling</div>
 
         <div>Hobbies & Interests</div>
-        <p>{{ interests.join(', ') }}</p>
+        <div>Video games, Coding, Anime, Animation</div>
 
-        <div>Goals In Life / Dreams</div>
-        <p>{{ goals }}</p>
+        <div>Goals In Life / Dream</div>
+        <div>Join the Philippine Military Academy and specialize in cybersecurity & forensics</div>
 
         <div>Picture Gallery</div>
         <div>
-          <img v-for="photo in memorablePhotos" :key="photo" :src="photo" alt="Memorable Photo" width="100">
+          <img src="https://i.postimg.cc/dZRKCzfc/mphoto1.jpg" alt="Memorable Photo">
+          <img src="https://i.postimg.cc/9rV22Q4m/mphoto2.jpg" alt="Memorable Photo">
+          <img src="https://i.postimg.cc/Dm1hRXwp/mphoto3.jpg" alt="Memorable Photo">
+          <img src="https://i.postimg.cc/CBq0hZH1/mphoto4.jpg" alt="Memorable Photo">
         </div>
       </section>
 
@@ -44,33 +47,8 @@
 
 <script>
 export default {
-  name: "PersonalProfile",
-  data() {
-    return {
-      name: "Ric Brian P. Boado",
-      bio: "Currently studying Bachelor of Science in Computer Science with a specialization in Cybersecurity and Forensics at Asia Pacific College (APC), 2nd year.",
-      course: "BSCS - Cybersecurity & Forensics",
-      education: [
-        { level: "College", program: "BSCS - Cybersecurity & Forensics", school: "Asia Pacific College", year: "2023-2027", award: "Honor Student" },
-        { level: "Senior High", program: "TVL-ICT", school: "Pasay City South High School", year: "2017-2021", award: "With High Honors" },
-        { level: "Junior High", program: "N/A", school: "Pasay City South High School", year: "2021-2023", award: "With High Honors" },
-        { level: "Elementary", program: "N/A", school: "Villamor Air Base Elementary School", year: "2011-2017", award: "Honor Student" }
-      ],
-      itExperience: [
-        "Building my own personal PC",
-        "Simple coding projects with Python",
-        "Tutorials on YouTube/courses about coding",
-        "Basic Wireshark packet handling"
-      ],
-      interests: ["Video games", "Coding", "Anime", "Animation"],
-      goals: "Pass the Philippine Military Academy and pursue a career in cybersecurity and forensics.",
-      memorablePhotos: [
-        "https://i.postimg.cc/dZRKCzfc/mphoto1.jpg",
-        "https://i.postimg.cc/9rV22Q4m/mphoto2.jpg",
-        "https://i.postimg.cc/Dm1hRXwp/mphoto3.jpg",
-        "https://i.postimg.cc/CBq0hZH1/mphoto4.jpg"
-      ]
-    };
-  }
+  name: "PersonalProfile"
 };
 </script>
+
+<style></style>
