@@ -1,6 +1,6 @@
 <script setup>
 import { ref, onMounted } from 'vue'
-import { supabase } from '/src/lib/supabaseClient'
+import { supabase } from './lib/supabaseClient'
 
 const countries = ref([])
 
