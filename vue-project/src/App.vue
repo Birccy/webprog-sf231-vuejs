@@ -4,7 +4,7 @@
   <food-item2/>
   <food-item/>
   <food-item2/>
-  <personal-profile/> <br>
+  <personal-profile/>
   <country/>
   <comment-form/>
   <comment/>
