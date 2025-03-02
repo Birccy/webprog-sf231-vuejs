@@ -1,10 +1,10 @@
 <template>
+  <personal-profile/>
   <h1>Food</h1>
   <food-item/>
   <food-item2/>
   <food-item/>
   <food-item2/>
-  <personal-profile/>
   <country/>
   <comment-form/>
   <comment/>
