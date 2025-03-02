@@ -8,6 +8,7 @@
   <country/>
   <comment-form/>
   <comment/>
+  <rest-api/>
    
 
 </template>
